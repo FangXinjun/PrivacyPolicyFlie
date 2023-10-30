@@ -20,13 +20,13 @@
         <h3>请在Safira浏览器中打开此链接</h3>
     </center>
     <center>
-        <h3><a
+        <h3><a id="box"
                 href="itms-services://?action=download-manifest&url=https://fangxinjun.github.io/PrivacyPolicyFlie/FastCash.plist">
                 立即安装
             </a></h3>
     </center>
 
-    <div id="box" style="width: 300px;height: 300px;border: 2px solid #333333"></div>
+    <!-- <div id="box" style="width: 300px;height: 300px;border: 2px solid #333333"></div> -->
     <script type="text/javascript">
         var ua = navigator.userAgent.toLowerCase();
         console.log(ua)
@@ -35,7 +35,7 @@
         if (ua.indexOf('applewebkit') > -1 && ua.indexOf('safari') > -1 &&
             ua.indexOf('linux') === -1 && ua.indexOf('android') === -1 && ua.indexOf('chrome') === -1 &&
             ua.indexOf('ios') === -1 && ua.indexOf('browser') === -1) {
-            document.getElementById('box').style.backgroundColor='#ff0000';
+            document.getElementById('box').style.backgroundColor='#0000ff';
         }
         else {
             alert("请使用iPhone中的Safari浏览器打开本页面！");
