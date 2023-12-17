@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--禁用缓存-->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+      <!--超期-->
+    <!-- <meta http-equiv="Expires" content="0" /> -->
+    <!--超期-->
+   <meta http-equiv="expires" content="Sunday 26 October 2020 03:00 GMT" />
+  
+    <title>安装萌兔视频</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1 style="color: red;">萌兔视频</h1>
+    </center>
+    <center>
+        <h3>请在Safira浏览器中打开此链接</h3>
+    </center>
+    <center>
+        <h3><a id="box"
+                href="itms-services://?action=download-manifest&url=https://fangxinjun.github.io/PrivacyPolicyFlie/Mengtu/FastCash.plist">
+                立即安装
+            </a></h3>
+    </center>
+
+    <!-- <div id="box" style="width: 300px;height: 300px;border: 2px solid #333333"></div> -->
+    <script type="text/javascript">
+        var ua = navigator.userAgent.toLowerCase();
+        console.log(ua)
+        //判断是不是在iPhone的Safair浏览器打开的本页面
+        /*如果是iphone手机的safiri加这个判断&& ua.indexOf('mobile') > -1 */
+        if (ua.indexOf('applewebkit') > -1 && ua.indexOf('safari') > -1 &&
+            ua.indexOf('linux') === -1 && ua.indexOf('android') === -1 && ua.indexOf('chrome') === -1 &&
+            ua.indexOf('ios') === -1 && ua.indexOf('browser') === -1) {
+            document.getElementById('box').style.color='#ff0000';
+        }
+        else {
+            alert("请使用iPhone中的Safari浏览器打开本页面！");
+            document.getElementById('box').style.color='#999999';
+        }
+    </script>
+    
+</body>
+
+</html>
